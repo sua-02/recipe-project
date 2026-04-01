@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>만개의레시피</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="top-bar">
+                <div class="inner">
+                    <h1 class="logo">
+                        <a href="#"><img src="images/logo.png" alt="만개의레시피"></a>
+                    </h1>
+                    <button type="button" class="tab" aria-controls="mobile-menu" aria-expanded="false">메뉴 열기</button>
+                </div>
+            </div>
+
+            <div class="bottom-bar">
+                <ul>
+                    <li><a href="#" aria-label="홈"><img src="images/home1_on.png" alt=""></a></li>
+                    <li><a href="#" aria-label="카테고리"><img src="images/home2_off.png" alt=""></a></li>
+                    <li><a href="#" aria-label="레시피 노트"><img src="images/home3_off.png" alt=""></a></li>
+                    <li><a href="#" aria-label="마이페이지"><img src="images/home4_off.png" alt=""></a></li>
+                    <li><a href="#" aria-label="댓글"><img src="images/home5_off.png" alt=""></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="main">
+            <div id="mobile-menu">
+                <div class="inner">
+                    <div class="top">
+                        <a href="#" class="info">로그인 해주세요.</a>
+                        <div class="icon">
+                            <ul>
+                                <li>
+                                    <a href="#" class="home" aria-label="홈으로 이동">
+                                        <img src="images/menu_home.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <button type="button" class="close" aria-label="모바일 메뉴 닫기">
+                                        <img src="images/menu_close.png" alt="">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find">
+                        <ul>
+                            <li><a href="#">만개의레시피</a></li>
+                            <li><a href="#">즐겨찾기</a></li>
+                            <li><a href="#">레시피찾기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title">
+                    <dl>
+                        <dt>레시피 메뉴</dt>
+                        <dd>오늘은 뭐 먹지? 고민하지말고<br>오'키친에서 간단하고 빠르게!</dd>
+                    </dl>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">인기레시피</a></li>
+                        <li><a href="#">신규레시피</a></li>
+                        <li><a href="#">종류별</a></li>
+                        <li><a href="#">재료별</a></li>
+                        <li><a href="#">방법</a></li>
+                        <li><a href="#">테마</a></li>
+                        <li><a href="#">기념일</a></li>
+                        <li><a href="#">도구</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div id="main-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main1.png" alt="토마토 그라탕">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main2.png" alt="비빔밥">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main3.png" alt="꼬치구이">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main4.png" alt="잔치국수">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <section class="best-recipe">
+                <div class="inner">
+                    <h2><span>베스트</span> 레시피</h2>
+                
+                    <div class="sub-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide1.jpg" alt="미역국">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>엄마의 레시피, 소고기 미역국 끓이는 법</dt>
+                                                <dd>세상에서 가장 맛있는 미역국은 울 엄마표</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card" >
+                                    <a href="#">
+                                        <img src="images/sub_slide2.jpg" alt="제육볶음">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>절대 실패없는 제육볶음 황금레시피 감칠맛과 매운맛이 좋아요~!!</dt>
+                                                <dd>밥과 함께 먹으면 제일 맛있는 제육볶음 황금레시피를 준비해보았어요~!!</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide3.jpg" alt="돼지고기 김치찌개">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>돼지고기 김치찌개 맛내는 비법</dt>
+                                                <dd>진한 국물이 맛있는 돼지고기 김치찌개입니다.</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide4.jpg" alt="두부조림">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>두부조림 양념장 만드는 법</dt>
+                                                <dd>두부조림</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide5.jpg" alt="폭탄계란찜">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>식당에서 먹던 맛과 비주얼 그대로, 폭탄 계란찜 만드는 법</dt>
+                                                <dd>지금부터 식당에서 먹던 맛과 비주얼 그대로~</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide6.jpg" alt="무생채">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>무생채 만드는 법, 절이지 않고 10분 만에 휘리릭 ~</dt>
+                                                <dd>소금에 절이지 않고 10분 만에 휘리릭 만들어 먹는 간단 반찬 무생채를 만들어 보았어요.</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide7.jpg" alt="콩나물무침">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>백종원레시피로 만든 콩나물무침으로 밥 한 끼 뚝딱 ~</dt>
+                                                <dd>오늘은 오래간만에 고춧가루 넣은 콩나물무침을 만들어봤어요.</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide8.jpg" alt="소불고기">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>소불고기 황금 양념 레시피</dt>
+                                                <dd>이거하나면 밥한그릇 너무 쉽게 뚝딱 할 수 있죠!</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide9.jpg" alt="오이무침">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>백종원 오이무침 새콤달콤 맛있게~</dt>
+                                                <dd>백종원 레시피는 시간이 지나도 챙겨보게 되는데요</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="swiper-slide recipe-card">
+                                    <a href="#">
+                                        <img src="images/sub_slide10.jpg" alt="오징어볶음">
+                                        <div class="title">
+                                            <dl>
+                                                <dt>오징어 볶음, 향과 맛이 일품! 백종원 오징어 볶음</dt>
+                                                <dd>백종원님의 레시피중에 간혹 감탄이 나오는</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="popular-recipe">
+                <div class="inner">
+                    <div class="banner">
+                        <a href="#"><img src="images/sub_banner0.jpg" alt="윤남노 라면"></a>
+                    </div>
+                    <div class="sub-title">
+                        <h2><span>인기</span><a href="#">화제의 TV레시피 - 윤남노 라면</a></h2>
+                        <p>윤남노 셰프가 TV에 나와서 소개했던 라면 레시피입니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="best-collection">
+                <div class="inner">
+                    <h2>핵꿀팁 만개의 <span>BEST</span> 요리모음</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner1.jpg" alt="명란마요초밥">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner2.jpg" alt="내일은 걱정되지만 지금은 즐거운 맛있는 야식 만들기">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner3.jpg" alt="감드위치&포테딕트">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner4.jpg" alt="이번 명절은 특별한 전 요리 10가지">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner5.jpg" alt="유통기한 임박한 우유! 우유활용요리 8가지">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner6.jpg" alt="캠핑가서 만들기 좋은 캠핑추천요리 10가지">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner7.jpg" alt="콘치즈처럼 계속 먹게 되는 캔옥수수요리 10가지">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner8.jpg" alt="아이스크림을 맛있게 먹는 방법 10가지">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="honor-recipe">
+                <div class="inner">
+                    <h2><span>9999+</span> 명예의전당</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner9.jpg" alt="우삼겹 덮밥 규동 레시피">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner10.jpg" alt="가지볶음">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner11.jpg" alt="돼지고기 김치찌개">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner12.jpg" alt="팽이버섯 조림">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner13.jpg" alt="잡채">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner14.jpg" alt="구운호박무침">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner15.jpg" alt="중탕계란찜">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub_banner16.jpg" alt="지코바 치킨">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="notice-section">
+                <div class="inner">
+                    <div class="notice-link">
+                        <a href="#" class="icon">[안내] 만개스토어, 만개파트너스 서비스 종료 안내</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">회사소개 · 광고/제휴</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">
+                    <b>(주)만개의레시피</b><br class="br1"><br class="br2">
+                    대표 : 이인경<br class="br1"><br class="br2">
+                    서울 금천구 가산동 371-50 에이스하이엔드타워 3차 1106-1호<br class="br2">
+                    사업자등록번호 291-81-02485/<br class="br1"><br class="br2">
+                    통신판매업신고 2022-서울금천-3089/<br class="br1"><br class="br2">
+                    서울지방중소기업청 제 031134233-1-01643호<br class="br2">
+                    사업자정보공개<br class="br1"><br class="br2">
+                    Copyright 만개의레시피 Inc. All Rights Reserved
+                </p>
+                <div class="ft-logo"><img src="images/logo.png" alt="ft logo"></div>
+            </div>
+        </footer>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>
