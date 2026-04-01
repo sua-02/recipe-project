@@ -108,8 +108,9 @@ body.fixed {
     right: 0;
 }
 #mobile-menu .inner {
+    width: auto;
+    margin: 0;
     padding: 20px 25px;
-    height: 8em;
     background-color: #74b243;
     box-sizing: border-box;
 }
